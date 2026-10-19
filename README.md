@@ -11,7 +11,6 @@ An AI-powered application that helps users summarize PDF documents and ask quest
 - Support for text-based and scanned PDF documents.
 - Use a Streamlit interface for document summarization and question answering.
 - Include a Flask web application for document summarization.
-- Display application screenshots to demonstrate key features.
   
 ## 🛠️ Technologies Used
 
