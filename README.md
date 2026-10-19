@@ -5,10 +5,14 @@ An AI-powered application that helps users summarize PDF documents and ask quest
 ## ✨ Features
 
 - Upload and read PDF documents.
-- Generate AI-powered document summaries.
-- Ask questions about the uploaded document.
-- Use a Streamlit interface for interacting with the application.
-
+- Generate AI-powered summaries using the Google Gemini API.
+- Ask questions about uploaded PDF content.
+- Extract text from scanned PDFs using Optical Character Recognition (OCR).
+- Support for text-based and scanned PDF documents.
+- Use a Streamlit interface for document summarization and question answering.
+- Include a Flask web application for document summarization.
+- Display application screenshots to demonstrate key features.
+  
 ## 🛠️ Technologies Used
 
 - Python
