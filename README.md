@@ -16,20 +16,32 @@ An AI-powered application that helps users summarize PDF documents and ask quest
 
 - Python
 - Streamlit
+- Flask
 - Google Gemini API
 - PyPDF
-- Flask
+- Tesseract OCR
+- pdf2image
+- Poppler
+- Pillow
 
 ## 📁 Project Structure
 
 ```text
-ai_document_summarizer/
-├── streamlit_app.py
+ai-document-summarizer/
 ├── app.py
+├── streamlit_app.py
 ├── requirements.txt
+├── .env.example
+├── .gitignore
+├── README.md
 ├── templates/
 ├── static/
-└── .gitignore
+└── screenshots/
+    ├── app-home.png
+    ├── summary-result.png
+    ├── question-answer.png
+    ├── ocr-result.png
+    └── ocr-summary-result.png
 ```
 
 ## 🚀 Getting Started
@@ -37,8 +49,8 @@ ai_document_summarizer/
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd ai_document_summarizer
+git clone https://github.com/chethansree77/ai-document-summarizer.git
+cd ai-document-summarizer
 ```
 
 ### 2. Create and activate a virtual environment
@@ -52,25 +64,37 @@ python -m venv venv
 
 ### 3. Install dependencies
 
-```bash
-pip install -r requirements.txt
+```powershell
+python -m pip install -r requirements.txt
 ```
 
 ### 4. Configure the Gemini API key
 
-Create a `.env` file in the project root and add:
+Create a `.env` file in the project root directory and add:
 
 ```text
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
-Replace the placeholder with your own API key. Never upload your real `.env` file to GitHub.
+Alternatively, copy `.env.example` to `.env` and replace the placeholder with your own Gemini API key.
+
+Never upload your real `.env` file to GitHub.
 
 ### 5. Run the Streamlit application
 
-```bash
+```powershell
 python -m streamlit run streamlit_app.py
 ```
+
+### 6. Additional setup for scanned PDF OCR on Windows
+
+OCR requires Tesseract OCR and Poppler to be installed on your computer.
+
+- Install [Tesseract OCR](https://github.com/UB-Mannheim/tesseract/wiki).
+- Download [Poppler for Windows](https://github.com/oschwartz10612/poppler-windows/releases).
+- Ensure both tools are installed and their executable folders are configured as required by the application.
+
+The Streamlit application can then extract text from supported scanned PDFs using OCR.
 
 ## 🔐 Security
 
