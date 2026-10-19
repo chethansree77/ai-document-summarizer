@@ -1,0 +1,6 @@
+
+streamlit
+Flask
+pypdf
+google-genai
+python-dotenv
