@@ -1,8 +1,29 @@
-
-venv/
+# Python cache files
 __pycache__/
 *.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+venv_test/
+.venv/
+
+# Environment variables and API keys
 .env
 .env.*
 !.env.example
+
+# Private documents and generated test PDFs
+documents/
+ocr_test_scanned.pdf
+nature_picture.pdf
+fake_test.pdf
+
+# Temporary OCR test scripts and images
+test_ocr_setup.py
+create_ocr_test.py
+ocr_test_page.png
+
+# Operating system files
 .DS_Store
+Thumbs.db

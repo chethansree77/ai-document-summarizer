@@ -80,15 +80,25 @@ Chethana Sai Sree
 [GitHub Profile](https://github.com/chethansree77)
 
 
-
 ## 🖥️ Application Screenshots
 
 ### 1. Application Homepage
+
 ![AI Document Summarizer homepage](screenshots/app-home.png)
 
 ### 2. Generated Document Summary
+
 ![AI-generated document summary](screenshots/summary-result.png)
 
 ### 3. Document Question and Answer
-![Question and answer feature](screenshots/question-answer.png)
+
+![Document question and answer feature](screenshots/question-answer.png)
+
+### 4. OCR Text Extraction from a Scanned PDF
+
+![OCR successfully extracting text from a scanned PDF](screenshots/ocr-result.png)
+
+### 5. AI Summary of a Scanned PDF
+
+![AI-generated summary of OCR-extracted document text](screenshots/ocr-summary-result.png)
 
