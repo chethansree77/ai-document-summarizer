@@ -78,3 +78,17 @@ Store API keys in environment variables and keep secret files out of version con
 Chethana Sai Sree
 
 [GitHub Profile](https://github.com/chethansree77)
+
+
+
+## 🖥️ Application Screenshots
+
+### 1. Application Homepage
+![AI Document Summarizer homepage](screenshots/app-home.png)
+
+### 2. Generated Document Summary
+![AI-generated document summary](screenshots/summary-result.png)
+
+### 3. Document Question and Answer
+![Question and answer feature](screenshots/question-answer.png)
+
