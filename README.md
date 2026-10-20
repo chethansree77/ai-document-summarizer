@@ -1,111 +1,31 @@
-# 📄 AI Document Summarizer
+# 📄 DocuMind AI — Document Summarizer
 
-An AI-powered application that helps users summarize PDF documents and ask questions about their content using Generative AI.
+An AI-powered document assistant that helps users summarize PDF files, ask questions about document content, and extract text from scanned PDFs using Optical Character Recognition (OCR).
+
+Built with Python and Google's Gemini API, this project combines document processing and Generative AI to make information easier to understand.
 
 ## ✨ Features
 
-- Upload and read PDF documents.
-- Generate AI-powered summaries using the Google Gemini API.
-- Ask questions about uploaded PDF content.
-- Extract text from scanned PDFs using Optical Character Recognition (OCR).
-- Support for text-based and scanned PDF documents.
-- Use a Streamlit interface for document summarization and question answering.
-- Include a Flask web application for document summarization.
-  
+- 📄 **PDF Upload and Text Extraction** — Read content from supported PDF documents.
+- 🤖 **AI-Powered Summarization** — Generate summaries using the Google Gemini API.
+- 💬 **Document Question Answering** — Ask questions about uploaded PDF content.
+- 🔍 **OCR Support** — Extract text from scanned PDFs using Tesseract OCR.
+- 📚 **Scanned PDF Summarization** — Generate summaries from OCR-extracted text.
+- 🖥️ **Web Interfaces** — Includes Streamlit and Flask application components.
+
 ## 🛠️ Technologies Used
 
-- Python
-- Streamlit
-- Flask
-- Google Gemini API
-- PyPDF
-- Tesseract OCR
-- pdf2image
-- Poppler
-- Pillow
-
-## 📁 Project Structure
-
-```text
-ai-document-summarizer/
-├── app.py
-├── streamlit_app.py
-├── requirements.txt
-├── .env.example
-├── .gitignore
-├── README.md
-├── templates/
-├── static/
-└── screenshots/
-    ├── app-home.png
-    ├── summary-result.png
-    ├── question-answer.png
-    ├── ocr-result.png
-    └── ocr-summary-result.png
-```
-
-## 🚀 Getting Started
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/chethansree77/ai-document-summarizer.git
-cd ai-document-summarizer
-```
-
-### 2. Create and activate a virtual environment
-
-On Windows PowerShell:
-
-```powershell
-python -m venv venv
-.\venv\Scripts\Activate.ps1
-```
-
-### 3. Install dependencies
-
-```powershell
-python -m pip install -r requirements.txt
-```
-
-### 4. Configure the Gemini API key
-
-Create a `.env` file in the project root directory and add:
-
-```text
-GEMINI_API_KEY=your_gemini_api_key_here
-```
-
-Alternatively, copy `.env.example` to `.env` and replace the placeholder with your own Gemini API key.
-
-Never upload your real `.env` file to GitHub.
-
-### 5. Run the Streamlit application
-
-```powershell
-python -m streamlit run streamlit_app.py
-```
-
-### 6. Additional setup for scanned PDF OCR on Windows
-
-OCR requires Tesseract OCR and Poppler to be installed on your computer.
-
-- Install [Tesseract OCR](https://github.com/UB-Mannheim/tesseract/wiki).
-- Download [Poppler for Windows](https://github.com/oschwartz10612/poppler-windows/releases).
-- Ensure both tools are installed and their executable folders are configured as required by the application.
-
-The Streamlit application can then extract text from supported scanned PDFs using OCR.
-
-## 🔐 Security
-
-Store API keys in environment variables and keep secret files out of version control.
-
-## 👩‍💻 Author
-
-Chethana Sai Sree
-
-[GitHub Profile](https://github.com/chethansree77)
-
+| Technology | Purpose |
+|---|---|
+| Python | Application development |
+| Streamlit | Interactive document interface |
+| Flask | Web application framework |
+| Google Gemini API | AI-powered text generation |
+| PyPDF | PDF text extraction |
+| Tesseract OCR | Text recognition from scanned documents |
+| pdf2image | Convert PDF pages into images |
+| Poppler | PDF processing support for OCR workflows |
+| Pillow | Image processing |
 
 ## 🖥️ Application Screenshots
 
@@ -129,3 +49,85 @@ Chethana Sai Sree
 
 ![AI-generated summary of OCR-extracted document text](screenshots/ocr-summary-result.png)
 
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Python installed on your computer
+- A Google Gemini API key
+- Tesseract OCR and Poppler for scanned-PDF processing
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/chethansree77/ai-document-summarizer.git
+cd ai-document-summarizer
+```
+
+### 2. Create a Virtual Environment
+
+```powershell
+python -m venv venv
+```
+
+Activate it in Windows PowerShell:
+
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+
+### 3. Install Dependencies
+
+```powershell
+python -m pip install -r requirements.txt
+```
+
+### 4. Configure the Gemini API Key
+
+Create a `.env` file in the project root directory and add your own API key:
+
+```text
+GEMINI_API_KEY=your_gemini_api_key_here
+```
+
+You can also copy `.env.example` to `.env` and replace the placeholder with your key.
+
+**Security:** Never upload your real `.env` file or expose your API key in your source code.
+
+### 5. Run the Streamlit Application
+
+```powershell
+python -m streamlit run streamlit_app.py
+```
+
+### 6. Configure OCR on Windows
+
+For scanned-PDF OCR, install the required external tools:
+
+- [Tesseract OCR for Windows](https://github.com/UB-Mannheim/tesseract/wiki)
+- [Poppler for Windows](https://github.com/oschwartz10612/poppler-windows/releases)
+
+Ensure the application can locate the installed executables, following the configuration used in your project.
+
+## 🔐 Security
+
+- Store API keys in environment variables.
+- Keep `.env` files out of version control.
+- Use `.env.example` to document required environment variables without including real secrets.
+
+## 👩‍💻 Author
+
+**Chethana Sai Sree**
+
+[GitHub Profile](https://github.com/chethansree77)
+
+## 📌 Project Highlights
+
+This project demonstrates practical experience with:
+
+- Python application development
+- Generative AI integration using the Gemini API
+- PDF processing and text extraction
+- OCR-based document processing
+- Building interactive web applications with Streamlit and Flask
+- Environment variable management and GitHub project documentation
